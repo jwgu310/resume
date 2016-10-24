@@ -559,17 +559,20 @@
 /*slide7*/
         .slide7 span{
             display: block;
-            margin: 3.8rem 1.2rem;
+            /*margin: 3.8rem 1.2rem;*/
             font-size: 1rem;
-            -webkit-transition: 2s;
-            transition: 2s;
-            -webkit-transform: scale(0.1);
-            transform: scale(0.1);
+           -webkit-animation: page7 2s both;
+           animation: page7 2s infinite 1s both;
+        }
+        @keyframes page7 {
+            0%{
+               margin-left: 0;
+            }
+            100%{
+                margin-left: 1.2rem;
+            }
         }
         #page7 span{
-            -webkit-transform: scale(1.6);
-            transform: scale(1.6);
-            font-size: 2rem;
            /* -webkit-animation: wobble 1s infinite both;
             animation: wobble 1s infinite both;*/
         }
