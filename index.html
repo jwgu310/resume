@@ -35,7 +35,7 @@
             position: relative;
         }
         .swiper-wrapper .slide1,.swiper-wrapper .slide2 ,.swiper-wrapper .slide3,.slide4,.slide5,.slide6,.slide7{
-            background: url("img/bg.png") no-repeat /*rgba(30, 39, 94, 0.34)*/ #c2c0c1;
+            background: url("img/bg.png") no-repeat #c2c0c1;
 
             background-size: cover;
         }
@@ -62,7 +62,33 @@
             position: absolute;
         }
 
+/*i*/
+        .swiper-container i{
+            width: 0.8rem;
+            height: 0.8rem;
+            background: url("img/up.png") no-repeat;
+            background-size: cover;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 2.8rem;
+            margin-bottom: 0;
+            z-index: 100;
 
+            -webkit-animation: tranI 2s infinite 0.5s both;
+            -o-animation: tranI 2s infinite 0.5s both;
+            -moz-animation: tranI 2s infinite 0.5s both;
+            -ms-animation: tranI 2s infinite 0.5s both;
+            animation: tranI 2s infinite 0.5s both;
+        }
+        @keyframes tranI {
+            0%{
+                margin-bottom: 0;
+            }
+            100%{
+                margin-bottom:0.5rem;
+            }
+        }
 /*slide1*/
         .slide1 img:nth-child(1){
             width: 0.82rem;
@@ -626,23 +652,7 @@
             }
         }
 
-        .swiper-container i{
-            width: 0.8rem;
-            height: 0.8rem;
-            background: url("img/up.png") no-repeat;
-            background-size: cover;
-            display: block;
-            position: absolute;
-            bottom: 0;
-            left: 2.8rem;
-            margin-bottom: 0;
-            z-index: 100;
-            -webkit-animation: tranI 2s infinite 0.5s both;
-            -o-animation: tranI 2s infinite 0.5s both;
-            -moz-animation: tranI 2s infinite 0.5s both;
-            -ms-animation: tranI 2s infinite 0.5s both;
-            animation: tranI 2s infinite 0.5s both;
-        }
+
    /*     .swiper-container i{
             display: block;
             width: 0;
@@ -669,14 +679,7 @@
             left: -0.4rem;
             z-index: 222;
         }*/
-        @keyframes tranI {
-            0%{
-                margin-bottom: 0;
-            }
-            100%{
-                margin-bottom:0.5rem;
-            }
-        }
+
 
     </style>
 </head>
