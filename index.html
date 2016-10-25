@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -15,12 +15,51 @@
         var desWfontSize = 100;
         document.documentElement.style.fontSize = winW/desW*desWfontSize +'px';
     </script>
+    <style>
+
+        .music{
+            width: 0.6rem;
+            height: 0.6rem;
+            position: absolute;
+            top: 0.2rem;
+            right: 0.2rem;
+            z-index: 111888;
+            background: url("audio/music.svg") no-repeat;
+            background-size: 100% 100%;
+            opacity: 0;
+        }
+        .musicMove{
+            -webkit-animation: move 1s infinite linear both;
+            animation: move 1s infinite linear both;
+        }
+        @keyframes move {
+            0%{
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100%{
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes move {
+            0%{
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100%{
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 
 </head>
 <body>
 <div id="main">
     <div class="music">
-        <audio src="audio/lucky.mp3" loop preload="auto" id="lucky" ></audio>
+        <audio src="audio/lucky.mp3" loop preload="none" id="lucky" ></audio>
     </div>
 <div class="swiper-container">
     <i id="tranI"></i>
@@ -119,6 +158,7 @@
     var mySwiper = new Swiper(".swiper-container",{
 //        effect : 'coverflow',
         direction:'vertical',
+//        direction:'horizontal',
         onSlideChangeEnd:function(swiper){
             console.log(swiper);
             var slides = swiper.slides;
