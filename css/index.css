@@ -565,15 +565,29 @@ html,body{
 
 
 /*slide7*/
-.slide7 span{
-    display: block;
-    margin: 3.8rem 1.2rem;
-    font-size: 2rem;
+.slide7 img{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    margin-left: -2rem;
+    margin-top: -2rem;
+    left: 50%;
+    top:40%;
 }
+.slide7 span{
+    /*display: block;
+    margin: 3.8rem 1.2rem;*/
+    position: absolute;
+    left: 50%;
+    top:65%;
+    font-size: 0.5rem;
+    margin-left: -1.6rem;
+}
+/*
 #page7 span{
     -webkit-animation: wobble 1s infinite both;
     animation: wobble 1s infinite both;
-}
+}*/
 
 @media  screen and (max-height:566px){  /*ipone4*/
     .slide1 p{

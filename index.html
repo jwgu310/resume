@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>个人简历</title>
+
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <link rel="stylesheet" href="css/reset.min.css"/>
@@ -145,7 +146,8 @@
 
         </div>
         <div class="swiper-slide slide7">
-            <span>谢谢</span>
+            <img src="img/weixin.png" alt="">
+            <span>13051301207</span>
         </div>
     </div>
 </div>
@@ -186,7 +188,7 @@
     var lucky = document.querySelector("#lucky");
     var music = document.querySelector(".music");
 
-    window.setTimeout(function(){
+   var timer = window.setTimeout(function(){
         lucky.play();
         lucky.addEventListener("canplay",function(){
             music.className = 'music musicMove';
