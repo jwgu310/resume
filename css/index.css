@@ -13,7 +13,6 @@ html,body{
 }
 .swiper-wrapper .slide1,.swiper-wrapper .slide2 ,.swiper-wrapper .slide3,.slide4,.slide5,.slide6,.slide7{
     background: url("../img/bg.png") no-repeat #c2c0c1;
-
     background-size: cover;
 }
 .slide1 img,.slide2 img,.slide3 img,.slide4 img,.slide5 img,.slide6 img{
@@ -537,13 +536,13 @@ html,body{
 .slide6 div{
     margin-top: 4rem;
 }
-.slide6 span{
+.slide6 p{
     display: inline-block;
     margin-top: 1rem;
     margin-left: 1rem;
     opacity: 0;
 }
-#page6 span{
+#page6 p{
     opacity: 1;
 }
 #page6 img:nth-of-type(1){
@@ -554,11 +553,11 @@ html,body{
     -webkit-animation: bounceInRight 2s both;
     animation: bounceInRight 2s both;
 }
-#page6 span:nth-of-type(1){
+#page6 p:nth-of-type(1){
     -webkit-animation: bounceInLeft 1s both;
     animation: bounceInLeft 1s both;
 }
-#page6 span:nth-of-type(2){
+#page6 p:nth-of-type(2){
     -webkit-animation: bounceInLeft 1s 1s both;
     animation: bounceInLeft 1s 1s both;
 }
